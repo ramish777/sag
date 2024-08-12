@@ -1,13 +1,5 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
-import football_pic from "../Website Data/ft.jpg"
-import bakht from "../Website Data/Teams/Football Team/bakht.jpg";
-import azhar from "../Website Data/Teams/Football Team/azhar.JPG";
-import ham from "../Website Data/Teams/Football Team/ham.JPG";
-import rehman from "../Website Data/Teams/Football Team/rehman.JPG";
-import shakeel from "../Website Data/Teams/Football Team/shakeel.JPG";
-import umer from "../Website Data/Teams/Football Team/umer.JPG";
-
 import React, { useContext, useEffect } from 'react';
 import { NavbarContext } from '../Context/NavbarContext';
 
@@ -16,32 +8,32 @@ const players = [
     {
         name: "Bakht Ali",
         position: "Center Back",
-        image: bakht
+        image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Teams/football/bakht_9_11zon.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvVGVhbXMvZm9vdGJhbGwvYmFraHRfOV8xMXpvbi5qcGciLCJpYXQiOjE3MjM0NzE5OTQsImV4cCI6MjAzODgzMTk5NH0.s0BD70lOZmpGrCY3eRciG2jXv0bvxnUcGAd-3LOHSgE&t=2024-08-12T14%3A13%3A15.329Z"
     },
     {
         name: "Hamza Munir",
         position: "Right Back",
-        image: ham
+        image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Teams/football/ham_10_11zon.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvVGVhbXMvZm9vdGJhbGwvaGFtXzEwXzExem9uLmpwZyIsImlhdCI6MTcyMzQ3MjAxOSwiZXhwIjoyMDM4ODMyMDE5fQ.Gua4H31FN7BXwig8TYOzr9LNU7BBPxDwDzTzQ9Xmk3M&t=2024-08-12T14%3A13%3A39.155Z"
     },
     {
         name: "Muhammad Azhar",
         position: "Goal Keeper",
-        image: azhar
+        image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Teams/football/azhar_8_11zon.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvVGVhbXMvZm9vdGJhbGwvYXpoYXJfOF8xMXpvbi5qcGciLCJpYXQiOjE3MjM0NzIwNDUsImV4cCI6MjAzODgzMjA0NX0.jYBtV73_8VZG1RzSEB9IwF3IwkGauUAzlT3YX5Dld00&t=2024-08-12T14%3A14%3A06.043Z"
     },
     {
         name: "Rehman Bari",
         position: "Striker",
-        image: rehman
+        image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Teams/football/rehman_11_11zon.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvVGVhbXMvZm9vdGJhbGwvcmVobWFuXzExXzExem9uLmpwZyIsImlhdCI6MTcyMzQ3MjA2OSwiZXhwIjoyMDM4ODMyMDY5fQ.dhrjzzxP0kKfd35dgZH3rVtk7XqriN6MVUNO4lQgvdU&t=2024-08-12T14%3A14%3A29.263Z"
     },
     {
         name: "Shakeel",
         position: "Midfielder",
-        image: shakeel
+        image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Teams/football/shakeel_12_11zon.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvVGVhbXMvZm9vdGJhbGwvc2hha2VlbF8xMl8xMXpvbi5qcGciLCJpYXQiOjE3MjM0NzIwOTEsImV4cCI6MjAzODgzMjA5MX0.3izSDS6V_h7D8IU225iAf93jp3XV7u6CLZlTc6g-h7Q&t=2024-08-12T14%3A14%3A51.762Z"
     },
     {
         name: "Umer Sadozai",
         position: "Center Back",
-        image: umer
+        image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Teams/football/umer_13_11zon.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvVGVhbXMvZm9vdGJhbGwvdW1lcl8xM18xMXpvbi5qcGciLCJpYXQiOjE3MjM0NzIxMTYsImV4cCI6MjAzODgzMjExNn0.HrsY0cU2quClYw0iSSo2M5JjQM-tGSPZZrOYWEhkukI&t=2024-08-12T14%3A15%3A16.232Z"
     }
 ];
    
@@ -68,7 +60,7 @@ const FootballPlayer = () => {
     return (
         <div className="relative flex-col w-full min-h-screen bg-black">
         <div className="relative w-full h-screen">
-            <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(${football_pic})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+            <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/ft_32_11zon.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvZnRfMzJfMTF6b24uanBnIiwiaWF0IjoxNzIzNDcxOTMzLCJleHAiOjIwMzg4MzE5MzN9.yfUj7Jbf735EYco5mgv_vFHUlDNQ7m9Ci8uq2Venf2Q&t=2024-08-12T14%3A12%3A13.906Z)`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-700"></div> */}
             </div>

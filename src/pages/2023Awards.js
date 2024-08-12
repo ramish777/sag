@@ -1,10 +1,6 @@
 import React from 'react';
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
-import bg_3 from "../images/bg_3.jpg";
-import lfl from "../Website Data/Acheivements/2023 - 2024/lfl.jpg"
-import ls from "../Website Data/Acheivements/2023 - 2024/ls.jpg"
-import ncc from "../Website Data/Acheivements/2023 - 2024/ncc.jpg"
 
 import { useContext, useEffect } from 'react';
 import { NavbarContext } from '../Context/NavbarContext';
@@ -19,38 +15,32 @@ const Awards2022 = () => {
     const achievements = [
         {
             title: "Lahore Futsal League by LST",
-            image: lfl,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2023-2024/lfl.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjMtMjAyNC9sZmwuanBnIiwiaWF0IjoxNzIzNDcwMzk5LCJleHAiOjIwMzg4MzAzOTl9.hDqWR-xbL1v6C2jtzX98ImL3Hy7ln5qVzx5mK8VgXms&t=2024-08-12T13%3A46%3A39.840Z",
             description: "Clinched the Lahore Futsal League title by winning the final fixture against Lahore Athletic 3-1, solidifying our status as league champions."
         },
         {
             title: "Liga Smurfia S5",
-            image: ls,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2023-2024/ls.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjMtMjAyNC9scy5qcGciLCJpYXQiOjE3MjM0NzA0MjEsImV4cCI6MjAzODgzMDQyMX0.vOinx3gWO8WL9XNcxZzpGTSz1YTY_-UCeF1DbRZUn8U&t=2024-08-12T13%3A47%3A01.624Z",
             description: "Secured the Liga Smurfia S5 title with a thrilling 5-3 victory over Baseline FC in Islamabad, demonstrating our consistent dominance."
         },
         {
             title: "National Challenge Cup - Finalist",
-            image: ncc,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2023-2024/ncc.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjMtMjAyNC9uY2MuanBnIiwiaWF0IjoxNzIzNDcwNDQzLCJleHAiOjIwMzg4MzA0NDN9.FA1Oo54ciaqMe2Ez_b3atRq_zjvnoQnBcyvh2fW_wVc&t=2024-08-12T13%3A47%3A23.627Z",
             description: "Made history as the only private club to reach the National Challenge Cup final, narrowly losing to Pakistan WAPDA 1-0 in the country’s premier championship."
         }
     ];
 
     return (
         <div className="relative w-full min-h-screen bg-black">
-            <div className="relative w-full h-screen">
-                <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(${bg_3})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+             <div className="relative sm:h-2/4 w-full lg:h-screen">
+                <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/bg_3.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvYmdfMy5qcGciLCJpYXQiOjE3MjM0Njk1NDcsImV4cCI6MjAzODgyOTU0N30.NJjkGkP2rLsmXH5ese-s9fJv11a_a8eK52u5mE83daQ&t=2024-08-12T13%3A32%3A27.868Z)`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                 </div>
                 <div className="relative z-10 h-full overflow-y-auto">
                     <Navbar />
                     <div className="flex flex-col mt-20 lg:mt-40 p-4">
                         <div className="w-full lg:w-2/3 mx-auto text-center">
-                            <h1 className="text-2xl lg:text-4xl font-bold text-white">Achievements (2023-24)</h1>
-                            <p className="text-sm lg:text-lg text-gray-300 mt-4">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante tellus. Nullam id dui justo. Proin sollicitudin varius dolor, ac mollis nisi imperdiet ac. Duis in odio ligula. Mauris auctor ligula eu libero convallis, non faucibus odio laoreet.
-                            </p>
-                            <p className="text-sm lg:text-lg text-gray-300 mt-4">
-                                Morbi ac libero vel turpis dictum pretium. Sed sodales urna et lacus fringilla, a congue leo dictum. Donec et feugiat nisi.
-                            </p>
+                            <h1 className="text-5xl lg:text-9xl font-bold text-white">Achievements (2023-2024)</h1>
                         </div>
                     </div>
                 </div>

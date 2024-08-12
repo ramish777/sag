@@ -1,11 +1,6 @@
 import React from 'react';
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
-import bg_3 from "../images/bg_3.jpg";
-import depalpur from "../Website Data/Acheivements/2020/Depalpur.jpeg"
-import cl from "../Website Data/Acheivements/2021-2022/ChitralLeague.jpg"
-import apc from "../Website Data/Acheivements/2022-2023/AllPakistanCup.jpg"
-import lfl from "../Website Data/Acheivements/2023 - 2024/lfl.jpg"
 import { useContext, useEffect } from 'react';
 import { NavbarContext } from '../Context/NavbarContext';
 import { Link } from 'react-router-dom';
@@ -21,25 +16,25 @@ const Acheivements = () => {
     const achievements = [
         {
             title: "2024 Awards",
-            image: lfl,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2023-2024/lfl.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjMtMjAyNC9sZmwuanBnIiwiaWF0IjoxNzIzNDcwMzk5LCJleHAiOjIwMzg4MzAzOTl9.hDqWR-xbL1v6C2jtzX98ImL3Hy7ln5qVzx5mK8VgXms&t=2024-08-12T13%3A46%3A39.840Z",
             description: "We were able to secure 3 trophies in these mega events.",
             link: "/awards-2023-24"
         },
         {
             title: "2023-2022 Awards",
-            image: apc,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2022-2023/AllPakistanCup.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjItMjAyMy9BbGxQYWtpc3RhbkN1cC5qcGciLCJpYXQiOjE3MjM0NzAxMzksImV4cCI6MjAzODgzMDEzOX0.rtcvd5COgal9n8FtFTRMfzkRWHY1ydzi-J9uKCE1weA&t=2024-08-12T13%3A42%3A19.787Z",
             description: "We were able to secure 4 trophies in these mega events.",
             link: "/awards-2022-23"
         },
         {
             title: "2022-2021 Awards",
-            image: cl,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2021-2022/ChitralLeague.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjEtMjAyMi9DaGl0cmFsTGVhZ3VlLmpwZyIsImlhdCI6MTcyMzQ2OTgyMiwiZXhwIjoyMDM4ODI5ODIyfQ.9QIShPWtjNEolrv2QhDSo3IjtlmKElvpyevpB1Fy6dw&t=2024-08-12T13%3A37%3A02.441Z",
             description: "We were able to secure 4 trophies in these mega events.",
             link: "/awards-2021-22"
         },
         {
             title: "2020 Awards",
-            image: depalpur,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2020/Depalpur.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjAvRGVwYWxwdXIuanBlZyIsImlhdCI6MTcyMzQ2OTYwOSwiZXhwIjoyMDM4ODI5NjA5fQ.wpT_2O7EPeCoNzTKU-iGYnqRM0W_Xq_snGf4btUQRSo&t=2024-08-12T13%3A33%3A30.096Z",
             description: "We were able to secure 2 trophies in these mega events.",
             link: "/awards-2020"
         }
@@ -48,7 +43,7 @@ const Acheivements = () => {
     return (
         <div className="relative w-full min-h-screen bg-black">
             <div className="relative sm:h-2/4 w-full lg:h-screen">
-                <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(${bg_3})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+                <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/bg_3.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvYmdfMy5qcGciLCJpYXQiOjE3MjM0Njk1NDcsImV4cCI6MjAzODgyOTU0N30.NJjkGkP2rLsmXH5ese-s9fJv11a_a8eK52u5mE83daQ&t=2024-08-12T13%3A32%3A27.868Z)`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                 </div>
                 <div className="relative z-10 h-full overflow-y-auto">

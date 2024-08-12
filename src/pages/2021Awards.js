@@ -1,12 +1,6 @@
 import React from 'react';
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
-import bg_3 from "../images/bg_3.jpg";
-import cl from "../Website Data/Acheivements/2021-2022/ChitralLeague.jpg"
-import ff from "../Website Data/Acheivements/2021-2022/FutsalFiesta.jpeg"
-import ls from "../Website Data/Acheivements/2021-2022/LahoreSports.jpg"
-import lsl from "../Website Data/Acheivements/2021-2022/LigaSmurfiaLahore.jpg"
-import lsp from "../Website Data/Acheivements/2021-2022/LigaSmurfiaPakistan.jpg"
 import { useContext, useEffect } from 'react';
 import { NavbarContext } from '../Context/NavbarContext';
 
@@ -20,48 +14,42 @@ const Awards2021 = () => {
     const achievements = [
         {
             title: "Futsal Fiesta",
-            image: ff,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2021-2022/FutsalFiesta.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjEtMjAyMi9GdXRzYWxGaWVzdGEuanBlZyIsImlhdCI6MTcyMzQ2OTg0OCwiZXhwIjoyMDM4ODI5ODQ4fQ.DgBbnAmgCZKXLlEqWYrNVHer5-if2vgRRvR4WuLWJQs&t=2024-08-12T13%3A37%3A28.652Z",
             description: "Celebrated our first futsal tournament win at the Futsal Fiesta, marking a milestone in our futsal journey."
         },
         {
             title: "Lahore Sports Tournament 8",
-            image: ls,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2021-2022/LahoreSports.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjEtMjAyMi9MYWhvcmVTcG9ydHMuanBnIiwiaWF0IjoxNzIzNDY5ODc2LCJleHAiOjIwMzg4Mjk4NzZ9.Yb5Fdtjock0Ov_f_wrFdbhBiC9WBaQ-SvEQxyU65uXQ&t=2024-08-12T13%3A37%3A56.406Z",
             description: "Dominated the Lahore Sports Tournament 8 with a commanding 2-0 victory over Raiders Nation, solidifying our reputation in the local futsal scene."
         },
         {
             title: "Liga Smurfia Lahore",
-            image: lsl,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2021-2022/LigaSmurfiaLahore.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjEtMjAyMi9MaWdhU211cmZpYUxhaG9yZS5qcGciLCJpYXQiOjE3MjM0Njk5MDEsImV4cCI6MjAzODgyOTkwMX0.9QbTH0KLkkYsWPmR4fb11sKNsKgE5fMVcJ9NUh-MUSU&t=2024-08-12T13%3A38%3A21.891Z",
             description: "Achieved a remarkable 8-0 triumph against Golazo FC in Liga Smurfia Lahore, underscoring our offensive prowess and teamwork."
         },
         {
             title: "Liga Smurfia Islamabad",
-            image: lsp,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2021-2022/LigaSmurfiaPakistan.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjEtMjAyMi9MaWdhU211cmZpYVBha2lzdGFuLmpwZyIsImlhdCI6MTcyMzQ2OTkyOCwiZXhwIjoyMDM4ODI5OTI4fQ._TeycRqb5UAy2Jbac2P_gnPw-bMMhnnHqjAEshkxnU4&t=2024-08-12T13%3A38%3A48.641Z",
             description: "Clinched a decisive 2-0 win against Goals FC in Liga Smurfia Islamabad, continuing our success across different cities."
         },
         {
             title: "Chitral League - Finalists",
-            image: cl,
+            image: "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Achievements/2021-2022/ChitralLeague.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNoaWV2ZW1lbnRzLzIwMjEtMjAyMi9DaGl0cmFsTGVhZ3VlLmpwZyIsImlhdCI6MTcyMzQ2OTgyMiwiZXhwIjoyMDM4ODI5ODIyfQ.9QIShPWtjNEolrv2QhDSo3IjtlmKElvpyevpB1Fy6dw&t=2024-08-12T13%3A37%3A02.441Z",
             description: "Finished as finalists in the Chitral League, putting up a valiant fight against Pakistan Army in a close 2-1 match."
         }
     ];
 
     return (
         <div className="relative w-full min-h-screen bg-black">
-            <div className="relative w-full h-screen">
-                <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(${bg_3})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+            <div className="relative sm:h-2/4 w-full lg:h-screen">
+                <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/bg_3.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvYmdfMy5qcGciLCJpYXQiOjE3MjM0Njk1NDcsImV4cCI6MjAzODgyOTU0N30.NJjkGkP2rLsmXH5ese-s9fJv11a_a8eK52u5mE83daQ&t=2024-08-12T13%3A32%3A27.868Z)`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                 </div>
                 <div className="relative z-10 h-full overflow-y-auto">
                     <Navbar />
                     <div className="flex flex-col mt-20 lg:mt-40 p-4">
                         <div className="w-full lg:w-2/3 mx-auto text-center">
-                            <h1 className="text-2xl lg:text-4xl font-bold text-white">Achievements (2021-22)</h1>
-                            <p className="text-sm lg:text-lg text-gray-300 mt-4">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante tellus. Nullam id dui justo. Proin sollicitudin varius dolor, ac mollis nisi imperdiet ac. Duis in odio ligula. Mauris auctor ligula eu libero convallis, non faucibus odio laoreet.
-                            </p>
-                            <p className="text-sm lg:text-lg text-gray-300 mt-4">
-                                Morbi ac libero vel turpis dictum pretium. Sed sodales urna et lacus fringilla, a congue leo dictum. Donec et feugiat nisi.
-                            </p>
+                            <h1 className="text-5xl lg:text-9xl font-bold text-white">Achievements (2021-2022)</h1>
                         </div>
                     </div>
                 </div>

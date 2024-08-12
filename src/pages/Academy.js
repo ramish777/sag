@@ -1,11 +1,5 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
-import bg_3 from "../Website Data/Academy/Main Header/Main_Header.jpeg";
-import pic1 from "../Website Data/Club Infrastructure/pic1.png";
-import pic2 from "../Website Data/Club Infrastructure/pic2.jpg";
-import pic3 from "../Website Data/Club Infrastructure/pic3.jpg";
-import pic4 from "../Website Data/Club Infrastructure/pic4.png";
-import pic5 from "../Website Data/Club Infrastructure/pic5.jpg";
 import { useState, useEffect } from 'react';
 import LocationCard from "../components/Location";
 import PricingCard from '../components/PriceCard';
@@ -13,7 +7,13 @@ import PricingCard from '../components/PriceCard';
 
 
 const Academy = () => {
-    const images = [pic1,pic2,pic3,pic4,pic5];
+    const images =[
+        "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Club%20Infrastructure/pic1.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQ2x1YiBJbmZyYXN0cnVjdHVyZS9waWMxLnBuZyIsImlhdCI6MTcyMzQ2OTEzMCwiZXhwIjoyMDM4ODI5MTMwfQ.zFa7PojpKS9o3MANSWRxXWuKe0017mB5f33IPzdDgAA&t=2024-08-12T13%3A25%3A31.195Z",
+        "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Club%20Infrastructure/pic2.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQ2x1YiBJbmZyYXN0cnVjdHVyZS9waWMyLmpwZyIsImlhdCI6MTcyMzQ2OTE0NywiZXhwIjoyMDM4ODI5MTQ3fQ.pvC2xassINaHvowYkv-UaJff532hozJn9l_ippD37Io&t=2024-08-12T13%3A25%3A47.940Z",
+        "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Club%20Infrastructure/pic3.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQ2x1YiBJbmZyYXN0cnVjdHVyZS9waWMzLmpwZyIsImlhdCI6MTcyMzQ2OTE2NywiZXhwIjoyMDM4ODI5MTY3fQ.N-33PT1eya_vqJW5BMRGvqf5t6f8OpHTBBCsrVDMGaA&t=2024-08-12T13%3A26%3A07.495Z",
+        "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Club%20Infrastructure/pic4.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQ2x1YiBJbmZyYXN0cnVjdHVyZS9waWM0LnBuZyIsImlhdCI6MTcyMzQ2OTE4OCwiZXhwIjoyMDM4ODI5MTg4fQ.nMNc2Ix6RMWhBmiVGdgq8N2rcdG1B8kM4_G565_xy08&t=2024-08-12T13%3A26%3A28.352Z",
+        "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Club%20Infrastructure/pic5.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQ2x1YiBJbmZyYXN0cnVjdHVyZS9waWM1LmpwZyIsImlhdCI6MTcyMzQ2OTIwNywiZXhwIjoyMDM4ODI5MjA3fQ.J_Eh6uBCmrFhVZTaXSTaAtTf-oD-3uQL0UF0omgL2L8&t=2024-08-12T13%3A26%3A48.131Z"
+    ]
     const [currentIndex, setCurrentIndex] = useState(0);
   
     const prevImage = () => {
@@ -45,12 +45,12 @@ const Academy = () => {
             sessionsPerWeek: 4,
         },
         {
-            ageCategory: 'Girls',
+            ageCategory: 'Early Years (Male)',
             price: '6000',
             trainingTimes: [
                 { days: '(Friday - Sunday)', time: '6:00 PM - 7:30 PM' },
             ],
-            sessionsPerWeek: 3,
+            sessionsPerWeek: 4,
         },
         {
             ageCategory: 'Seniors (Male)',
@@ -62,19 +62,19 @@ const Academy = () => {
             sessionsPerWeek: 4,
         },
         {
-            ageCategory: 'Early Years (Male)',
+            ageCategory: 'Girls',
             price: '6000',
             trainingTimes: [
                 { days: '(Friday - Sunday)', time: '6:00 PM - 7:30 PM' },
             ],
-            sessionsPerWeek: 4,
+            sessionsPerWeek: 3,
         }, 
     ];  
 
     return (
         <div className="relative w-full min-h-screen bg-black">
     <div className="relative w-full h-screen">
-        <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(${bg_3})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+        <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Academy/Main%20header/Main_Header.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQWNhZGVteS9NYWluIGhlYWRlci9NYWluX0hlYWRlci5qcGVnIiwiaWF0IjoxNzIzNDcxNDQ5LCJleHAiOjIwMzg4MzE0NDl9.Y3krvXQGHbucPz5A-1YXG3wLrQJMZThr9FQF2QupIog&t=2024-08-12T14%3A04%3A10.067Z)`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
             <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="relative z-10 h-full overflow-y-auto">
@@ -187,21 +187,21 @@ const Academy = () => {
                 <LocationCard 
                     name="Mega Arena, DHA" 
                     address="Jammu Chowk, E 40 Bedian Rd, Jamun, Lahore, Punjab" 
-                    image={pic3} 
+                    image="https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Club%20Infrastructure/pic3.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQ2x1YiBJbmZyYXN0cnVjdHVyZS9waWMzLmpwZyIsImlhdCI6MTcyMzQ2OTE2NywiZXhwIjoyMDM4ODI5MTY3fQ.N-33PT1eya_vqJW5BMRGvqf5t6f8OpHTBBCsrVDMGaA&t=2024-08-12T13%3A26%3A07.495Z" 
                     phone="+92 332 4966181 | +92 321 7209053" 
                     mapUrl="https://g.co/kgs/RXAFzoZ" 
                 />
                 <LocationCard 
                     name="Lion's Den, ISL Pine Avenue" 
                     address="2 Al-Biruni Rd, off Pine Avenue, Edenabad, Lahore, Punjab" 
-                    image={pic4} 
+                    image= "https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Club%20Infrastructure/pic4.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQ2x1YiBJbmZyYXN0cnVjdHVyZS9waWM0LnBuZyIsImlhdCI6MTcyMzQ2OTE4OCwiZXhwIjoyMDM4ODI5MTg4fQ.nMNc2Ix6RMWhBmiVGdgq8N2rcdG1B8kM4_G565_xy08&t=2024-08-12T13%3A26%3A28.352Z" 
                     phone="+92 332 4966181 | +92 321 7209053" 
                     mapUrl="https://g.co/kgs/TCmFyzC" 
                 />
                 <LocationCard 
                     name="Third Umpire, Bahria Town" 
                     address="Superior Services Housing Society, Lahore, Punjab" 
-                    image={pic5} 
+                    image="https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/Club%20Infrastructure/pic5.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvQ2x1YiBJbmZyYXN0cnVjdHVyZS9waWM1LmpwZyIsImlhdCI6MTcyMzQ2OTIwNywiZXhwIjoyMDM4ODI5MjA3fQ.J_Eh6uBCmrFhVZTaXSTaAtTf-oD-3uQL0UF0omgL2L8&t=2024-08-12T13%3A26%3A48.131Z" 
                     phone="+92 332 4966181 | +92 321 7209053" 
                     mapUrl="https://g.co/kgs/Bdj15EQ" 
                 />

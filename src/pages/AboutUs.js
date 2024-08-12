@@ -1,6 +1,5 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
-import bg_3 from "../images/bg_3.jpg";
 import sa from "../images/sa.jpg"
 
 
@@ -9,7 +8,7 @@ const AboutUs = () => {
     return (
         <div className="relative flex-col w-full min-h-screen bg-black">
         <div className="relative w-full h-screen">
-            <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(${bg_3})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+            <div className="absolute inset-0 z-0" style={{ backgroundImage: `url(https://ztwcunedakpirfkuvqkt.supabase.co/storage/v1/object/sign/Images/bg_3.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvYmdfMy5qcGciLCJpYXQiOjE3MjM0Njk1NDcsImV4cCI6MjAzODgyOTU0N30.NJjkGkP2rLsmXH5ese-s9fJv11a_a8eK52u5mE83daQ&t=2024-08-12T13%3A32%3A27.868Z)`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
                 <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
             <div className="relative z-10 h-full overflow-y-auto">
